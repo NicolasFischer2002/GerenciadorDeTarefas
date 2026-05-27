@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{29EB329D-7FB9-43C1-A41D-7CBA3E2FD810}|FrontEnd\\UI\\GerenciadorDeTarefas\\GerenciadorDeTarefas.csproj|c:\\desenvolvimento\\repositories\\personal\\gerenciadordetarefas\\frontend\\ui\\gerenciadordetarefas\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29EB329D-7FB9-43C1-A41D-7CBA3E2FD810}|FrontEnd\\UI\\GerenciadorDeTarefas\\GerenciadorDeTarefas.csproj|solutionrelative:frontend\\ui\\gerenciadordetarefas\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{827CE72E-3A10-74F6-1DF9-80C8893C20A5}|BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Dominio.csproj|c:\\desenvolvimento\\repositories\\personal\\gerenciadordetarefas\\backend\\contextos\\contextotarefa\\dominio\\valueobjects\\descricaotarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827CE72E-3A10-74F6-1DF9-80C8893C20A5}|BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Dominio.csproj|solutionrelative:backend\\contextos\\contextotarefa\\dominio\\valueobjects\\descricaotarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29EB329D-7FB9-43C1-A41D-7CBA3E2FD810}|FrontEnd\\UI\\GerenciadorDeTarefas\\GerenciadorDeTarefas.csproj|c:\\desenvolvimento\\repositories\\personal\\gerenciadordetarefas\\frontend\\ui\\gerenciadordetarefas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{29EB329D-7FB9-43C1-A41D-7CBA3E2FD810}|FrontEnd\\UI\\GerenciadorDeTarefas\\GerenciadorDeTarefas.csproj|solutionrelative:frontend\\ui\\gerenciadordetarefas\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{827CE72E-3A10-74F6-1DF9-80C8893C20A5}|BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Dominio.csproj|c:\\desenvolvimento\\repositories\\personal\\gerenciadordetarefas\\backend\\contextos\\contextotarefa\\dominio\\valueobjects\\titulotarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827CE72E-3A10-74F6-1DF9-80C8893C20A5}|BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Dominio.csproj|solutionrelative:backend\\contextos\\contextotarefa\\dominio\\valueobjects\\titulotarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827CE72E-3A10-74F6-1DF9-80C8893C20A5}|BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Dominio.csproj|c:\\desenvolvimento\\repositories\\personal\\gerenciadordetarefas\\backend\\contextos\\contextotarefa\\dominio\\agregado\\tarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827CE72E-3A10-74F6-1DF9-80C8893C20A5}|BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Dominio.csproj|solutionrelative:backend\\contextos\\contextotarefa\\dominio\\agregado\\tarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781CE945-5A19-BB98-9D94-7F1BB5C5D0D3}|BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Aplicacao.csproj|c:\\desenvolvimento\\repositories\\personal\\gerenciadordetarefas\\backend\\contextos\\contextotarefa\\aplicacao\\comandos\\criartarefa\\criartarefacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781CE945-5A19-BB98-9D94-7F1BB5C5D0D3}|BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Aplicacao.csproj|solutionrelative:backend\\contextos\\contextotarefa\\aplicacao\\comandos\\criartarefa\\criartarefacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781CE945-5A19-BB98-9D94-7F1BB5C5D0D3}|BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Aplicacao.csproj|c:\\desenvolvimento\\repositories\\personal\\gerenciadordetarefas\\backend\\contextos\\contextotarefa\\aplicacao\\comandos\\criartarefa\\criartarefacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781CE945-5A19-BB98-9D94-7F1BB5C5D0D3}|BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Aplicacao.csproj|solutionrelative:backend\\contextos\\contextotarefa\\aplicacao\\comandos\\criartarefa\\criartarefacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827CE72E-3A10-74F6-1DF9-80C8893C20A5}|BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Dominio.csproj|c:\\desenvolvimento\\repositories\\personal\\gerenciadordetarefas\\backend\\contextos\\contextotarefa\\dominio\\constants\\statustarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827CE72E-3A10-74F6-1DF9-80C8893C20A5}|BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Dominio.csproj|solutionrelative:backend\\contextos\\contextotarefa\\dominio\\constants\\statustarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tarefa.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Agregado\\Tarefa.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Agregado\\Tarefa.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Agregado\\Tarefa.cs",
+              "RelativeToolTip": "BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Agregado\\Tarefa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T18:14:29.212Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\FrontEnd\\UI\\GerenciadorDeTarefas\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "FrontEnd\\UI\\GerenciadorDeTarefas\\MainWindow.xaml",
-              "ToolTip": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\FrontEnd\\UI\\GerenciadorDeTarefas\\MainWindow.xaml",
-              "RelativeToolTip": "FrontEnd\\UI\\GerenciadorDeTarefas\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-27T16:31:35.854Z",
+              "Title": "TituloTarefa.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Dominio\\ValueObjects\\TituloTarefa.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Contextos\\ContextoTarefa\\Dominio\\ValueObjects\\TituloTarefa.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Dominio\\ValueObjects\\TituloTarefa.cs",
+              "RelativeToolTip": "BackEnd\\Contextos\\ContextoTarefa\\Dominio\\ValueObjects\\TituloTarefa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T18:22:08.957Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\FrontEnd\\UI\\GerenciadorDeTarefas\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "FrontEnd\\UI\\GerenciadorDeTarefas\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\FrontEnd\\UI\\GerenciadorDeTarefas\\MainWindow.xaml.cs",
-              "RelativeToolTip": "FrontEnd\\UI\\GerenciadorDeTarefas\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Title": "DescricaoTarefa.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Dominio\\ValueObjects\\DescricaoTarefa.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Contextos\\ContextoTarefa\\Dominio\\ValueObjects\\DescricaoTarefa.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Dominio\\ValueObjects\\DescricaoTarefa.cs",
+              "RelativeToolTip": "BackEnd\\Contextos\\ContextoTarefa\\Dominio\\ValueObjects\\DescricaoTarefa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T16:31:34.877Z",
+              "WhenOpened": "2026-05-27T18:21:51.59Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StatusTarefa.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Constants\\StatusTarefa.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Constants\\StatusTarefa.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Constants\\StatusTarefa.cs",
+              "RelativeToolTip": "BackEnd\\Contextos\\ContextoTarefa\\Dominio\\Constants\\StatusTarefa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T18:54:11.935Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CriarTarefaCommand.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Comandos\\CriarTarefa\\CriarTarefaCommand.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Comandos\\CriarTarefa\\CriarTarefaCommand.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Comandos\\CriarTarefa\\CriarTarefaCommand.cs",
+              "RelativeToolTip": "BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Comandos\\CriarTarefa\\CriarTarefaCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T18:59:18.133Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CriarTarefaCommandHandler.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Comandos\\CriarTarefa\\CriarTarefaCommandHandler.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Comandos\\CriarTarefa\\CriarTarefaCommandHandler.cs",
+              "ToolTip": "C:\\Desenvolvimento\\Repositories\\Personal\\GerenciadorDeTarefas\\BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Comandos\\CriarTarefa\\CriarTarefaCommandHandler.cs",
+              "RelativeToolTip": "BackEnd\\Contextos\\ContextoTarefa\\Aplicacao\\Comandos\\CriarTarefa\\CriarTarefaCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T19:00:04.633Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
