@@ -1,1 +1,15 @@
-<Solution />
+<Solution>
+  <Folder Name="/Fonte/" />
+  <Folder Name="/Fonte/BackEnd/" />
+  <Folder Name="/Fonte/BackEnd/Contextos/" />
+  <Folder Name="/Fonte/BackEnd/Contextos/ContextoTarefa/">
+    <Project Path="BackEnd/Contextos/ContextoTarefa/Aplicacao/Aplicacao.csproj" />
+    <Project Path="BackEnd/Contextos/ContextoTarefa/Apresentacao/Apresentacao.csproj" />
+    <Project Path="BackEnd/Contextos/ContextoTarefa/Dominio/Dominio.csproj" />
+    <Project Path="BackEnd/Contextos/ContextoTarefa/Infraestrutura/Infraestrutura.csproj" />
+  </Folder>
+  <Folder Name="/Fonte/FrontEnd/" />
+  <Folder Name="/Fonte/FrontEnd/UI/">
+    <Project Path="FrontEnd/UI/GerenciadorDeTarefas/GerenciadorDeTarefas.csproj" Id="29eb329d-7fb9-43c1-a41d-7cba3e2fd810" />
+  </Folder>
+</Solution>
