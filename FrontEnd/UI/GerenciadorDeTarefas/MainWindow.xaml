@@ -5,8 +5,411 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GerenciadorDeTarefas"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Gerenciador de Tarefas"
+        Icon="/Assets/Icone-Tarefa.ico"
+        Height="710"
+        Width="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#F3F6FB">
+
+    <Window.Resources>
+
+        <!-- CORES -->
+        <SolidColorBrush x:Key="PrimaryBlue"
+                         Color="#0040B4"/>
+
+        <SolidColorBrush x:Key="LightBackground"
+                         Color="#F3F6FB"/>
+
+        <SolidColorBrush x:Key="CardBackground"
+                         Color="White"/>
+
+        <!-- BOTÃO PRINCIPAL -->
+        <Style x:Key="PrimaryButtonStyle"
+               TargetType="Button">
+
+            <Setter Property="Background"
+                    Value="{StaticResource PrimaryBlue}"/>
+
+            <Setter Property="Foreground"
+                    Value="White"/>
+
+            <Setter Property="BorderThickness"
+                    Value="0"/>
+
+            <Setter Property="Height"
+                    Value="42"/>
+
+            <Setter Property="FontWeight"
+                    Value="SemiBold"/>
+
+            <Setter Property="FontSize"
+                    Value="15"/>
+
+            <Setter Property="Cursor"
+                    Value="Hand"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="ButtonBorder"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="6">
+
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+
+                                <Setter TargetName="ButtonBorder"
+                                        Property="Opacity"
+                                        Value="0.90"/>
+
+                            </Trigger>
+
+                            <Trigger Property="IsPressed"
+                                     Value="True">
+
+                                <Setter TargetName="ButtonBorder"
+                                        Property="Opacity"
+                                        Value="0.75"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+
+        <!-- BOTÃO DE ÍCONE -->
+        <Style x:Key="IconButtonStyle"
+               TargetType="Button">
+
+            <Setter Property="Width"
+                    Value="32"/>
+
+            <Setter Property="Height"
+                    Value="32"/>
+
+            <Setter Property="Background"
+                    Value="{StaticResource PrimaryBlue}"/>
+
+            <Setter Property="Foreground"
+                    Value="White"/>
+
+            <Setter Property="BorderThickness"
+                    Value="0"/>
+
+            <Setter Property="Cursor"
+                    Value="Hand"/>
+
+            <Setter Property="FontSize"
+                    Value="14"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="Button">
+
+                        <Border x:Name="ButtonBorder"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="6">
+
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+
+                            <Trigger Property="IsMouseOver"
+                                     Value="True">
+
+                                <Setter TargetName="ButtonBorder"
+                                        Property="Opacity"
+                                        Value="0.90"/>
+
+                            </Trigger>
+
+                            <Trigger Property="IsPressed"
+                                     Value="True">
+
+                                <Setter TargetName="ButtonBorder"
+                                        Property="Opacity"
+                                        Value="0.75"/>
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+
+        <!-- BOTÃO DE EXCLUIR -->
+        <Style x:Key="DangerIconButtonStyle"
+               TargetType="Button"
+               BasedOn="{StaticResource IconButtonStyle}">
+
+            <Setter Property="Background"
+                    Value="#D32F2F"/>
+
+        </Style>
+
+        <!-- INPUT -->
+        <Style x:Key="InputTextBoxStyle"
+               TargetType="TextBox">
+
+            <Setter Property="Height"
+                    Value="38"/>
+
+            <Setter Property="Padding"
+                    Value="10 6"/>
+
+            <Setter Property="FontSize"
+                    Value="15"/>
+
+            <Setter Property="BorderBrush"
+                    Value="#C5D2E8"/>
+
+            <Setter Property="BorderThickness"
+                    Value="1"/>
+
+            <Setter Property="Background"
+                    Value="White"/>
+
+        </Style>
+
+        <!-- SCROLLBAR -->
+        <Style TargetType="ScrollBar">
+
+            <Setter Property="Width"
+            Value="8"/>
+
+            <Setter Property="Background"
+            Value="Transparent"/>
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="ScrollBar">
+
+                        <Grid Background="Transparent">
+
+                            <Track Name="PART_Track"
+                           IsDirectionReversed="True">
+
+                                <Track.Thumb>
+
+                                    <Thumb Background="#C5D2E8">
+
+                                        <Thumb.Template>
+
+                                            <ControlTemplate TargetType="Thumb">
+
+                                                <Border Background="{TemplateBinding Background}"
+                                                CornerRadius="4"/>
+
+                                            </ControlTemplate>
+
+                                        </Thumb.Template>
+
+                                    </Thumb>
+
+                                </Track.Thumb>
+
+                            </Track>
+
+                        </Grid>
+
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Margin="25">
+
+        <Grid.RowDefinitions>
+
+            <!-- TÍTULO -->
+            <RowDefinition Height="Auto"/>
+
+            <!-- FORM -->
+            <RowDefinition Height="Auto"/>
+
+            <!-- LISTA -->
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <!-- TÍTULO -->
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    Margin="0 0 0 30">
+
+            <TextBlock Text="Gerenciador de Tarefas"
+                       FontSize="30"
+                       FontWeight="Bold"
+                       Foreground="{StaticResource PrimaryBlue}"
+                       VerticalAlignment="Center"/>
+
+            <TextBlock Text="🗂"
+                       FontSize="26"
+                       Margin="10 0 0 0"
+                       Foreground="{StaticResource PrimaryBlue}"
+                       VerticalAlignment="Center"/>
+
+        </StackPanel>
+
+        <!-- FORMULÁRIO -->
+        <Border Grid.Row="1"
+                Background="{StaticResource CardBackground}"
+                CornerRadius="10"
+                Padding="20"
+                Margin="0 0 0 20"
+                BorderBrush="#D9E2F2"
+                BorderThickness="1">
+
+            <StackPanel>
+
+                <TextBlock Text="Título"
+                           FontSize="14"
+                           FontWeight="SemiBold"
+                           Foreground="#334155"
+                           Margin="0 0 0 6"/>
+
+                <TextBox x:Name="TituloTextBox"
+                         Text="{Binding Titulo, UpdateSourceTrigger=PropertyChanged}"
+                         Style="{StaticResource InputTextBoxStyle}"
+                         Margin="0 0 0 15"/>
+
+                <TextBlock Text="Descrição"
+                           FontSize="14"
+                           FontWeight="SemiBold"
+                           Foreground="#334155"
+                           Margin="0 0 0 6"/>
+
+                <TextBox x:Name="DescricaoTextBox"
+                         Text="{Binding Descricao, UpdateSourceTrigger=PropertyChanged}"
+                         Style="{StaticResource InputTextBoxStyle}"
+                         Height="100"
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         VerticalScrollBarVisibility="Auto"
+                         Margin="0 0 0 20"/>
+
+                <Button Content="Adicionar"
+                        Click="AdicionarButton_Click"
+                        Style="{StaticResource PrimaryButtonStyle}"/>
+
+            </StackPanel>
+
+        </Border>
+
+        <!-- LISTA -->
+        <Border Grid.Row="2"
+                Background="{StaticResource CardBackground}"
+                CornerRadius="10"
+                Padding="15"
+                BorderBrush="#D9E2F2"
+                BorderThickness="1">
+
+            <ScrollViewer VerticalScrollBarVisibility="Hidden"
+                          HorizontalScrollBarVisibility="Disabled"
+                          Margin="0 5 0 0">
+
+                <StackPanel>
+
+                    <!-- ESTADO VAZIO -->
+                    <TextBlock Text="Lista de tarefas"
+                               FontSize="18"
+                               FontWeight="SemiBold"
+                               Foreground="#6B7280"
+                               HorizontalAlignment="Center"
+                               Margin="0 20"/>
+
+                    <ItemsControl ItemsSource="{Binding Tarefas}">
+
+                        <ItemsControl.ItemTemplate>
+
+                            <DataTemplate>
+
+                                <Border Background="#F8FAFC"
+                    CornerRadius="6"
+                    Padding="12"
+                    Margin="0 0 0 10"
+                    BorderBrush="#E2E8F0"
+                    BorderThickness="1">
+
+                                    <Grid>
+
+                                        <Grid.ColumnDefinitions>
+
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock Text="{Binding Titulo}"
+                               FontSize="15"
+                               VerticalAlignment="Center"
+                               FontWeight="SemiBold"/>
+
+                                        <StackPanel Grid.Column="1"
+                                Orientation="Horizontal">
+
+                                            <Button Content="✏"
+                                Margin="0 0 8 0"
+                                ToolTip="Editar"
+                                Style="{StaticResource IconButtonStyle}"/>
+
+                                            <Button Content="🗑"
+                                ToolTip="Remover"
+                                Style="{StaticResource DangerIconButtonStyle}"/>
+
+                                        </StackPanel>
+
+                                    </Grid>
+
+                                </Border>
+
+                            </DataTemplate>
+
+                        </ItemsControl.ItemTemplate>
+
+                    </ItemsControl>
+
+                </StackPanel>
+
+            </ScrollViewer>
+
+        </Border>
 
     </Grid>
+
 </Window>

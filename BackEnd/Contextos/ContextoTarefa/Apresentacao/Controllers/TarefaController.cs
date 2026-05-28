@@ -20,13 +20,23 @@ public sealed class TarefaController : ControllerBase
         [FromServices] CriarTarefaCommandHandler handler,
         CancellationToken cancellationToken)
     {
-        var response = await handler.HandleAsync(
-            command,
-            cancellationToken);
+        try
+        {
+            var response = await handler.HandleAsync(
+                command,
+                cancellationToken);
 
-        return Created(
-            $"/tarefas/{response.Id}",
-            response);
+            return Created(
+                $"/tarefas/{response.Id}",
+                response);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new
+            {
+                error = ex.Message
+            });
+        }
     }
 
     [HttpGet("{id:int}")]
@@ -160,7 +170,7 @@ public sealed class TarefaController : ControllerBase
         int id,
         [FromBody] AtualizarTarefaCommand request,
         [FromServices] AtualizarTarefaCommandHandler handler,
-    CancellationToken cancellationToken)
+        CancellationToken cancellationToken)
     {
         var command = new AtualizarTarefaCommand(
             id,
