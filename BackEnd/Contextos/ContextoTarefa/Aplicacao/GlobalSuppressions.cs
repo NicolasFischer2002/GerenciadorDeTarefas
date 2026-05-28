@@ -6,3 +6,10 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Style", "IDE0290:Usar construtor primário", Justification = "<Pendente>", Scope = "member", Target = "~M:Aplicacao.Comandos.CriarTarefa.CriarTarefaCommandHandler.#ctor(Aplicacao.Contratos.Repositorios.ITarefaRepository)")]
+[assembly: SuppressMessage("Style", "IDE0290:Usar construtor primário", Justification = "<Pendente>", Scope = "member", Target = "~M:Aplicacao.Consultas.ObterTarefaPorIdQueryHandler.#ctor(Aplicacao.Contratos.Repositorios.ITarefaRepository)")]
+[assembly: SuppressMessage("Style", "IDE0290:Usar construtor primário", Justification = "<Pendente>", Scope = "member", Target = "~M:Aplicacao.Consultas.ObterTodas.ListarTarefasQueryHandler.#ctor(Aplicacao.Contratos.Repositorios.ITarefaRepository)")]
+[assembly: SuppressMessage("Style", "IDE0290:Usar construtor primário", Justification = "<Pendente>", Scope = "member", Target = "~M:Aplicacao.Comandos.ExcluirTarefa.ExcluirTarefaCommandHandler.#ctor(Aplicacao.Contratos.Repositorios.ITarefaRepository)")]
+[assembly: SuppressMessage("Style", "IDE0290:Usar construtor primário", Justification = "<Pendente>", Scope = "member", Target = "~M:Aplicacao.Comandos.IniciarTarefa.IniciarTarefaCommandHandler.#ctor(Aplicacao.Contratos.Repositorios.ITarefaRepository)")]
+[assembly: SuppressMessage("Style", "IDE0290:Usar construtor primário", Justification = "<Pendente>", Scope = "member", Target = "~M:Aplicacao.Comandos.ConcluirTarefa.ConcluirTarefaCommandHandler.#ctor(Aplicacao.Contratos.Repositorios.ITarefaRepository)")]
+[assembly: SuppressMessage("Style", "IDE0290:Usar construtor primário", Justification = "<Pendente>", Scope = "member", Target = "~M:Aplicacao.Comandos.ReabrirTarefa.ReabrirTarefaCommandHandler.#ctor(Aplicacao.Contratos.Repositorios.ITarefaRepository)")]
+[assembly: SuppressMessage("Style", "IDE0290:Usar construtor primário", Justification = "<Pendente>", Scope = "member", Target = "~M:Aplicacao.Comandos.AtualizarTarefa.AtualizarTarefaCommandHandler.#ctor(Aplicacao.Contratos.Repositorios.ITarefaRepository)")]

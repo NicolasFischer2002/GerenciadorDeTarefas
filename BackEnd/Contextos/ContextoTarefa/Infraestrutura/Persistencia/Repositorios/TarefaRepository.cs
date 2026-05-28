@@ -25,17 +25,42 @@ public sealed class TarefaRepository : ITarefaRepository
         await _context.SaveChangesAsync(cancellationToken);
     }
 
-    public async Task<Tarefa?> ObterPorIdAsync(int id, CancellationToken cancellationToken)
+    public async Task<Tarefa?> ObterPorIdSomenteLeituraAsync(
+        int id, 
+        CancellationToken cancellationToken)
     {
         return await _context.Tarefas
+            .AsNoTracking()
             .FirstOrDefaultAsync(
-                x => x.Id == id,
+                tarefa => tarefa.Id == id,
                 cancellationToken);
     }
 
-    public async Task<List<Tarefa>> ObterTodasAsync(CancellationToken cancellationToken)
+    /// <summary>
+    /// Obtém uma tarefa por ID para leitura e escrita. 
+    /// Use este método apenas se for necessário modificar a entidade, caso contrário, 
+    /// prefira o método de somente leitura para melhor desempenho.
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    public async Task<Tarefa?> ObterPorIdAsync(
+        int id,
+        CancellationToken cancellationToken)
     {
-        return await _context.Tarefas.ToListAsync(cancellationToken);
+        return await _context.Tarefas
+            .FirstOrDefaultAsync(
+                tarefa => tarefa.Id == id,
+                cancellationToken);
+    }
+
+    public async Task<IReadOnlyCollection<Tarefa>> ObterTodasAsync(
+        CancellationToken cancellationToken)
+    {
+        return await _context.Tarefas
+            .AsNoTracking()
+            .OrderByDescending(tarefa => tarefa.DataDeCriacao)
+            .ToListAsync(cancellationToken);
     }
 
     public void Atualizar(Tarefa tarefa)

@@ -8,11 +8,15 @@ public interface ITarefaRepository
         Tarefa tarefa,
         CancellationToken cancellationToken);
 
+    Task<Tarefa?> ObterPorIdSomenteLeituraAsync(
+        int id,
+        CancellationToken cancellationToken);
+
     Task<Tarefa?> ObterPorIdAsync(
         int id,
         CancellationToken cancellationToken);
 
-    Task<List<Tarefa>> ObterTodasAsync(
+    Task<IReadOnlyCollection<Tarefa>> ObterTodasAsync(
         CancellationToken cancellationToken);
 
     Task SalvarAlteracoesAsync(
