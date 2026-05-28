@@ -2,6 +2,5 @@
 {
     public sealed record CriarTarefaCommand(
         string Titulo,
-        string? Descricao
-    );
+        string? Descricao);
 }

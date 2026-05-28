@@ -5,30 +5,21 @@ namespace Dominio.Agregado
 {
     public sealed class Tarefa
     {
-        public int IdBanco { get; private set; }
-
-        public Guid Id { get; private set; }
-
+        public int Id { get; private set; }
         public TituloTarefa Titulo { get; private set; }
-
         public DescricaoTarefa Descricao { get; private set; }
-
         public DateTime DataDeCriacao { get; private set; }
-
         public DateTime? DataDeConclusao { get; private set; }
-
         public StatusTarefa Status { get; private set; }
 
         private Tarefa() { }
 
         private Tarefa(
-            Guid id,
             TituloTarefa titulo,
             DescricaoTarefa descricao,
             DateTime dataDeCriacao,
             StatusTarefa status)
         {
-            Id = id;
             Titulo = titulo;
             Descricao = descricao;
             DataDeCriacao = dataDeCriacao;
@@ -36,15 +27,9 @@ namespace Dominio.Agregado
         }
 
         public static Tarefa Criar(
-            Guid id,
             TituloTarefa titulo,
             DescricaoTarefa descricao)
         {
-            if (id == Guid.Empty)
-                throw new ArgumentException(
-                    "O ID da tarefa não pode ser vazio.",
-                    nameof(id));
-
             if (titulo is null)
                 throw new ArgumentNullException(
                     nameof(titulo),
@@ -53,7 +38,6 @@ namespace Dominio.Agregado
             descricao ??= new DescricaoTarefa(string.Empty);
 
             return new Tarefa(
-                id,
                 titulo,
                 descricao,
                 DateTime.UtcNow,
