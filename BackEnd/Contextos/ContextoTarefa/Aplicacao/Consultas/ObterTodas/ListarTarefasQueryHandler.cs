@@ -15,14 +15,17 @@ namespace Aplicacao.Consultas.ObterTodas
             ListarTarefasQuery query,
             CancellationToken cancellationToken)
         {
-            var tarefas = await _tarefaRepository.ObterTodasAsync(cancellationToken);
+            var tarefas = query.Status.HasValue
+                ? await _tarefaRepository.ObterTodasPorStatusAsync(
+                    query.Status.Value,
+                    cancellationToken)
+                : await _tarefaRepository.ObterTodasAsync(cancellationToken);
 
-            return [.. tarefas
-                .Select(tarefa => new ListarTarefasItemResponse(
-                    tarefa.Id,
-                    tarefa.Titulo.Valor,
-                    tarefa.Status.ToString(),
-                    tarefa.DataDeCriacao))];
+            return [.. tarefas.Select(tarefa => new ListarTarefasItemResponse(
+                tarefa.Id,
+                tarefa.Titulo.Valor,
+                tarefa.Status.ToString(),
+                tarefa.DataDeCriacao))];
         }
     }
 }

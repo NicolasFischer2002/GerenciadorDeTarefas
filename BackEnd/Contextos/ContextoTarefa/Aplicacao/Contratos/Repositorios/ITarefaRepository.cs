@@ -1,4 +1,5 @@
 ﻿using Dominio.Agregado;
+using Dominio.Constants;
 
 namespace Aplicacao.Contratos.Repositorios;
 
@@ -17,6 +18,10 @@ public interface ITarefaRepository
         CancellationToken cancellationToken);
 
     Task<IReadOnlyCollection<Tarefa>> ObterTodasAsync(
+        CancellationToken cancellationToken);
+
+    Task<IReadOnlyCollection<Tarefa>> ObterTodasPorStatusAsync(
+        StatusTarefa status,
         CancellationToken cancellationToken);
 
     Task SalvarAlteracoesAsync(

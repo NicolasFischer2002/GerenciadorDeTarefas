@@ -1,6 +1,6 @@
 ﻿namespace GerenciadorDeTarefas.Models
 {
-    public sealed class TarefaViewModel
+    public sealed record TarefaViewModel
     {
         public int Id { get; set; }
 

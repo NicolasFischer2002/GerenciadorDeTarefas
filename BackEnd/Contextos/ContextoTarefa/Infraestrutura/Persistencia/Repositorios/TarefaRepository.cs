@@ -1,5 +1,6 @@
 ﻿using Aplicacao.Contratos.Repositorios;
 using Dominio.Agregado;
+using Dominio.Constants;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infraestrutura.Persistencia.Repositorios;
@@ -59,6 +60,17 @@ public sealed class TarefaRepository : ITarefaRepository
     {
         return await _context.Tarefas
             .AsNoTracking()
+            .OrderByDescending(tarefa => tarefa.DataDeCriacao)
+            .ToListAsync(cancellationToken);
+    }
+
+    public async Task<IReadOnlyCollection<Tarefa>> ObterTodasPorStatusAsync(
+        StatusTarefa status,
+        CancellationToken cancellationToken)
+    {
+        return await _context.Tarefas
+            .AsNoTracking()
+            .Where(tarefa => tarefa.Status == status)
             .OrderByDescending(tarefa => tarefa.DataDeCriacao)
             .ToListAsync(cancellationToken);
     }

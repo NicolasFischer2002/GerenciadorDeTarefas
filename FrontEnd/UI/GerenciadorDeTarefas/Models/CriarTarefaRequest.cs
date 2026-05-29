@@ -1,9 +1,9 @@
 ﻿namespace GerenciadorDeTarefas.Models
 {
-    public sealed class CriarTarefaRequest
+    public sealed record CriarTarefaRequest
     {
-        public string Titulo { get; set; } = string.Empty;
-        public string? Descricao { get; set; }
+        public string Titulo { get; }
+        public string? Descricao { get; }
 
         public CriarTarefaRequest(string titulo, string? descricao)
         {

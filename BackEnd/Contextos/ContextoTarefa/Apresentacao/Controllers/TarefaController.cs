@@ -59,12 +59,13 @@ public sealed class TarefaController : ControllerBase
 
     [HttpGet]
     public async Task<IActionResult> ListarAsync(
-    [FromServices] ListarTarefasQueryHandler handler,
-    CancellationToken cancellationToken)
+        [FromQuery] ListarTarefasQuery query,
+        [FromServices] ListarTarefasQueryHandler handler,
+        CancellationToken cancellationToken)
     {
-        var query = new ListarTarefasQuery();
-
-        var response = await handler.HandleAsync(query, cancellationToken);
+        var response = await handler.HandleAsync(
+            query,
+            cancellationToken);
 
         return Ok(response);
     }
